@@ -43,10 +43,12 @@ if download and ticker:
 
 html_files = find_html_files(folder_path)
 
-file_to_analyze = st.selectbox("Which file do you want to see", html_files, index=None, placeholder="Select file")
-
-tenkparserobj.parse10K(file_to_analyze)
-items = tenkparserobj.getitems()
+try:
+    file_to_analyze = st.selectbox("Which file do you want to see", html_files, index=None, placeholder="Select file")
+    tenkparserobj.parse10K(file_to_analyze)
+    items = tenkparserobj.getitems()
+except:
+    file_to_analyze = []
 
 
 section_to_display = st.selectbox("which section do you want to see",
