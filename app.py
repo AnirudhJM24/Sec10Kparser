@@ -9,8 +9,7 @@ tenkparserobj =  tenkparser()
 
 def download10K(ticker):
 
-    for files in os.walk('sec-edgar-filings'):
-        os.remove(files)
+    os.rmdir('sec-edgar-filings')
     dl = Downloader("MyCompanyName", "my.email@domain.com")
     dl.get(ticker_or_cik=ticker,form='10-K',after='2014-01-01',before='2024-01-01',download_details=True)
 
