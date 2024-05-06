@@ -1,5 +1,6 @@
 import streamlit as st
 import os
+import shutil
 from sec_edgar_downloader import Downloader
 from k10parser import tenkparser
 
@@ -9,7 +10,7 @@ tenkparserobj =  tenkparser()
 
 def download10K(ticker):
 
-    os.rmdir('sec-edgar-filings')
+    shutil.rmtree('sec-edgar-filings')
     dl = Downloader("MyCompanyName", "my.email@domain.com")
     dl.get(ticker_or_cik=ticker,form='10-K',after='2014-01-01',before='2024-01-01',download_details=True)
 
