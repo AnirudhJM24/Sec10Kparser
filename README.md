@@ -15,3 +15,8 @@
 1. General insights about the performance over the past 30 years for the company.
 2. Ratios exemplifying the performance and status of the company, accompanied by relevant insights.
 3. A risk rating for an investor on a scale of 1-10.
+
+**App can be found here** - https://10kanalyzer.streamlit.app/
+
+## How to Use the App and Its Features
+
