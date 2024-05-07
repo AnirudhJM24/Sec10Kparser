@@ -42,7 +42,7 @@ if ticker:
         shutil.rmtree(folder_path)
     except:
         os.makedirs(folder_path)
-        
+
     try:
         os.makedirs(folder_path)
     except:
@@ -83,16 +83,16 @@ if ticker:
             st.bar_chart(filingobj.consolidated_ic.loc[label])  # Plot bar chart for each label
 
     if cash_flow:
-        st.dataframe(filingobj.consolidated_ic)
-        for label in filingobj.consolidated_ic.index:  # Iterate over labels
+        st.dataframe(filingobj.consolidated_cf)
+        for label in filingobj.consolidated_cf.index:  # Iterate over labels
             st.subheader(f"{label}")
-            st.bar_chart(filingobj.consolidated_ic.loc[label])  # Plot bar chart for each label
+            st.bar_chart(filingobj.consolidated_cf.loc[label])  # Plot bar chart for each label
 
     if balance_sheet:
-        st.dataframe(filingobj.consolidated_ic)
-        for label in filingobj.consolidated_ic.index:  # Iterate over labels
+        st.dataframe(filingobj.consolidated_bs)
+        for label in filingobj.consolidated_bs.index:  # Iterate over labels
             st.subheader(f"{label}")
-            st.bar_chart(filingobj.consolidated_ic.loc[label])  # Plot bar chart for each label
+            st.bar_chart(filingobj.consolidated_bs.loc[label])  # Plot bar chart for each label
 
     if generate_insights:
         st.write(llmcaller.makecall(),unsafe_allow_html=True)
