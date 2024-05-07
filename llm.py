@@ -1,5 +1,6 @@
 from openai import OpenAI
 from dotenv import dotenv_values
+import os
 
 
 
@@ -9,7 +10,7 @@ class Llminsights:
     
     def __init__(self):        
         config = dotenv_values(".env")
-        self.client = OpenAI(api_key=config['APIKEY'])
+        self.client = OpenAI(api_key=os.environ.get('APIKEY'))
         self.balance_sheet = ''
         self.income_statement = ''
         self.cash_flow = ''
