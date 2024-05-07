@@ -1,4 +1,10 @@
+## Introduction
+
 **Tech Stack Used:** Python and Streamlit for easy visualization and rapid prototyping
+
+**Libraries Used** 
+1. https://github.com/alphanome-ai/sec-parser - built upon their library and 10QParser to create my 10K Html Parser
+2. https://github.com/dgunning/edgartools - Used this libray to download sec filings and extract XBRL data
 
 **Factors Considered for Drawing Insights:**
 1. **Financial Statements:** Including cash flow statements, income statements, and balance sheets. These provide a comprehensive understanding of a company's financial health, performance, and stability over time. They offer insights into revenue, expenses, profitability, liquidity, and overall financial position.
