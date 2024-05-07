@@ -13,6 +13,7 @@ from sec_parser.semantic_tree import AlwaysNestAsParentRule, NestSameTypeDependi
 from collections import deque
 
 
+
 class ItemElement(sp.TitleElement):
     pass
 
