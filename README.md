@@ -20,3 +20,18 @@
 
 ## How to Use the App and Its Features
 
+**Landing Page :** Enter The Company Ticker to download the 10K filings for the past 30 years
+![landing page](Images\landing page.png)
+
+**Once downloaded you can view different 10K files and their sections:** 
+![sections](Images\datadownloaded.png)
+![section data](Images\searchforfileanditem.png)
+![section data](Images\itemdisplayed.png)
+
+**View Financial Statements Visualisation:**
+![Visualisation](Images\incomestatements.png)
+
+**AI generated Insights using GPT 3.5 :**
+![Ai gen](Images\aigeneratedresult.png)
+![Ai gen](Images\gatech2.png)
+
