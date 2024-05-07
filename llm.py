@@ -35,7 +35,8 @@ class Llminsights:
           presence_penalty=0
         )
 
-        prompt2body = completion.choices[0].message
+        prompt2body = completion.choices[0].message.content
+        
         prompt2 = f"Generate the following as html ACCURATELY: \n {prompt2body}"
         
         completion = self.client.chat.completions.create(
