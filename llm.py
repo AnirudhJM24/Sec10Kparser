@@ -19,7 +19,7 @@ class Llminsights:
     
     def makecall(self):
         
-        prompt = f" CASH FLOW STATEMENT \n {self.cash_flow} \n INCOME STATEMENT \n {self.income_statement} \n BALANCE SHEET \n {self.balance_sheet} \n Company : {self.company} \n Generate insights for the above using the following format STRICTLY:\n General Insights TEN LINES ONLY:\n Calculate IMPORTANT Ratios for all the years in one table only followed by a few lines of your insight:\n Risk Rating on a scale of 1-10 for an investor JUST A NUMBER :"
+        prompt = f" CASH FLOW STATEMENT \n {self.cash_flow} \n INCOME STATEMENT \n {self.income_statement} \n BALANCE SHEET \n {self.balance_sheet} \n Company : {self.company} \n Generate insights for the above using the following format STRICTLY MAKING ABSOLUTELY NO MISTAKES:\n General Insights TEN LINES ONLY:\n Calculate IMPORTANT Ratios for ALL THE YEARS in one table only followed by a few lines of your insight:\n Risk Rating on a scale of 1-10 for an investor JUST A NUMBER :"
         
 
 
