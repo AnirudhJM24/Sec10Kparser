@@ -37,7 +37,7 @@ class Llminsights:
 
         prompt2body = completion.choices[0].message.content
         
-        prompt2 = f"Generate the following as html ACCURATELY: \n {prompt2body}"
+        prompt2 = f"Generate the following as html WITH NO 'div' tags ACCURATELY: \n {prompt2body}"
         
         completion = self.client.chat.completions.create(
           model="gpt-3.5-turbo",
